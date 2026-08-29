@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="آچار ریاضی؛ محیطی تعاملی برای یادگیری ریاضی با آموزش، بازی، تمرین و چالش.">
+  <meta name="theme-color" content="#08110d">
+  <title>آچار ریاضی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    <div class="bubble bubble-4"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar glass" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="آچار ریاضی">
+        <img src="icon.png" class="brand-mark">
+        <span class="brand-name" data-i18n="brand">آچار ریاضی</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" type="button"
+              aria-label="باز کردن منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <div class="nav-links">
+          <a href="#start" data-i18n="navStart">بزن بریم!</a>
+          <a href="#install" data-i18n="navInstall">نصب</a>
+          <a href="#docs" data-i18n="navDocs">مستندات</a>
+          <a href="#about" data-i18n="navAbout">درباره ما</a>
+          <a href="#developers" data-i18n="navDevelopers">برای توسعه‌دهندگان</a>
+        </div>
+
+        <div class="nav-tools">
+          <label class="language-control glass-control">
+            <span aria-hidden="true">◎</span>
+            <select id="languageSelect" aria-label="انتخاب زبان">
+              <option value="fa">فارسی</option>
+              <option value="en">English</option>
+              <option value="ar">العربية</option>
+              <option value="fr">Français</option>
+            </select>
+          </label>
+
+          <button class="theme-toggle glass-control" id="themeToggle" type="button"
+                  aria-label="تغییر تم">
+            <span id="themeIcon" aria-hidden="true">☾</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" id="start">
+      <div class="hero-content">
+        <div class="badge glass">
+          <span class="badge-dot"></span>
+          <span data-i18n="badge">یک جعبه‌ابزار برای ریاضی</span>
+        </div>
+
+        <div class="hero-logo" aria-hidden="true">
+          <div class="logo-glow"></div>
+          <div class="wrench">
+            <span class="wrench-head"></span>
+            <span class="wrench-neck"></span>
+            <span class="wrench-handle"></span>
+            <span class="wrench-bolt">+</span>
+          </div>
+
+          <span class="floating-symbol symbol-a">π</span>
+          <span class="floating-symbol symbol-b">√</span>
+          <span class="floating-symbol symbol-c">x²</span>
+          <span class="floating-symbol symbol-d">∑</span>
+        </div>
+
+        <h1 data-i18n="heroTitle">از ریاضی نترس! <span>آچارش تو دستته!</span></h1>
+
+        <p class="hero-text" data-i18n="heroText">
+          آچار ریاضی یک محیط تعاملی برای یادگیری ریاضی است؛
+          جایی برای آموزش، بازی، تمرین و کشف مفاهیم در فصل‌های مختلف.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#tools" data-i18n="startButton">
+            بزن بریم!
+            <span class="button-arrow">←</span>
+          </a>
+
+          <a class="button secondary" href="#install" data-i18n="installButton">
+            نصب
+          </a>
+
+          <a class="button github" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 .7A11.3 11.3 0 0 0 8.4 22.8c.57.1.78-.25.78-.55v-2.05c-3.18.69-3.85-1.34-3.85-1.34-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.54-.29-5.2-1.27-5.2-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.12 1.17a10.8 10.8 0 0 1 5.68 0c2.16-1.48 3.12-1.17 3.12-1.17.62 1.57.23 2.73.11 3.02.73.8 1.18 1.82 1.18 3.07 0 4.41-2.67 5.37-5.21 5.66.41.35.78 1.05.78 2.12v3.14c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+
+        <p class="hero-note" data-i18n="heroNote">
+          از یک مفهوم شروع کن؛ بقیه‌اش را با هم کشف می‌کنیم.
+        </p>
+      </div>
+
+      <div class="floating-card card-geometry glass">
+        <span class="card-icon">△</span>
+        <span>
+          <strong data-i18n="floatGeometry">هندسه</strong>
+          <small data-i18n="floatExplore">کشف کن</small>
+        </span>
+      </div>
+
+      <div class="floating-card card-numbers glass">
+        <span class="card-icon">123</span>
+        <span>
+          <strong data-i18n="floatNumbers">اعداد</strong>
+          <small data-i18n="floatPractice">تمرین کن</small>
+        </span>
+      </div>
+
+      <div class="floating-card card-games glass">
+        <span class="card-icon">✦</span>
+        <span>
+          <strong data-i18n="floatGames">بازی</strong>
+          <small data-i18n="floatLearn">یاد بگیر</small>
+        </span>
+      </div>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="section-heading">
+        <span class="section-kicker" data-i18n="sectionKicker">داخل آچار</span>
+        <h2 data-i18n="sectionTitle">هر فصل، یک ابزار تازه</h2>
+        <p data-i18n="sectionText">
+          آچار ریاضی قرار است فقط جواب ندهد؛ کمک کند مفهوم را ببینی، امتحانش کنی و یاد بگیری.
+        </p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card glass">
+          <div class="tool-number">01</div>
+          <div class="tool-icon">△</div>
+          <h3 data-i18n="toolGeometry">هندسه</h3>
+          <p data-i18n="toolGeometryText">شکل‌ها، زاویه‌ها، مختصات و آزمایش‌های تعاملی.</p>
+          <span class="coming" data-i18n="coming">به‌زودی</span>
+        </article>
+
+        <article class="tool-card glass">
+          <div class="tool-number">02</div>
+          <div class="tool-icon">123</div>
+          <h3 data-i18n="toolIntegers">اعداد صحیح</h3>
+          <p data-i18n="toolIntegersText">محور اعداد، عملیات و تمرین‌های قابل لمس.</p>
+          <span class="coming" data-i18n="coming">به‌زودی</span>
+        </article>
+
+        <article class="tool-card glass">
+          <div class="tool-number">03</div>
+          <div class="tool-icon">✦</div>
+          <h3 data-i18n="toolPrimes">اعداد اول</h3>
+          <p data-i18n="toolPrimesText">کشف الگوها، بازی و تمرین برای اعداد اول.</p>
+          <span class="coming" data-i18n="coming">به‌زودی</span>
+        </article>
+
+        <article class="tool-card glass">
+          <div class="tool-number">04</div>
+          <div class="tool-icon">x²</div>
+          <h3 data-i18n="toolAlgebra">جبر</h3>
+          <p data-i18n="toolAlgebraText">عبارت‌ها و معادله‌ها را مرحله‌به‌مرحله تجربه کن.</p>
+          <span class="coming" data-i18n="coming">به‌زودی</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-section" id="install">
+      <div class="info-card glass">
+        <span class="section-kicker" data-i18n="installKicker">نصب</span>
+        <h2 data-i18n="installTitle">آچار ریاضی را همراه خودت داشته باش.</h2>
+        <a href="download/"><h1 data-i18n="navInstall">نصب</h1></a>
+    </section>
+
+    <section class="info-section" id="docs">
+      <div class="info-card glass">
+        <span class="section-kicker" data-i18n="docsKicker">مستندات</span>
+        <h2 data-i18n="docsTitle">چطور کار می‌کند؟</h2>
+        <p data-i18n="docsText">
+          راهنمای استفاده، معرفی ابزارها و توضیحات آموزشی پروژه در این قسمت قرار خواهد گرفت.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-section" id="about">
+      <div class="info-card glass">
+        <span class="section-kicker" data-i18n="aboutKicker">درباره ما</span>
+        <h2 data-i18n="aboutTitle">یادگیری ریاضی می‌تواند یک تجربه باشد.</h2>
+        <p data-i18n="aboutText">
+          آچار ریاضی با هدف ساختن یک محیط آموزشی جامع، تعاملی و متفاوت برای یادگیری ریاضی ساخته می‌شود.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-section" id="developers">
+      <div class="info-card glass">
+        <span class="section-kicker" data-i18n="devKicker">برای توسعه‌دهندگان</span>
+        <h2 data-i18n="devTitle">ساده، باز و قابل توسعه.</h2>
+        <p data-i18n="devText">
+          نسخه وب پروژه با HTML، CSS و JavaScript ساخته شده و برای انتشار روی GitHub Pages آماده است.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-brand">🔧 <span data-i18n="brand">آچار ریاضی</span></span>
+      <span data-i18n="footerText">ریاضی، با یک نگاه متفاوت.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

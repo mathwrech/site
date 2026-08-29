@@ -12,3 +12,6 @@ _Download App_
 _Github Repository_
 
 [Github](https://github.com/mathwrech)
+
+**Have a problem? App doesn't work? Don't know to use the app?**
+Contact us at mathwrech@outlook.com

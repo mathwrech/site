@@ -1,6 +1,552 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <p>ABC</p>
-    </body>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="دانلود و نصب آچار ریاضی؛ محیطی تعاملی برای یادگیری ریاضی."
+  >
+
+  <meta name="theme-color" content="#08110d">
+
+  <title>نصب | آچار ریاضی</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="background" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+
+    <div class="grid"></div>
+  </div>
+
+
+  <!-- Header -->
+  <header class="site-header">
+
+    <nav class="navbar glass">
+
+      <a href="../" class="brand" aria-label="آچار ریاضی">
+
+        <img
+          src="../icon.png"
+          class="brand-mark"
+          alt=""
+        >
+
+        <span
+          class="brand-name"
+          data-i18n="brand"
+        >
+          آچار ریاضی
+        </span>
+
+      </a>
+
+
+      <button
+        class="mobile-toggle"
+        id="mobileToggle"
+        type="button"
+        aria-label="باز کردن منو"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+
+      <div class="nav-panel" id="navPanel">
+
+        <div class="nav-links">
+
+          <a
+            href="../#start"
+            data-i18n="navStart"
+          >
+            بزن بریم!
+          </a>
+
+          <a
+            href="./"
+            class="active"
+            data-i18n="navInstall"
+          >
+            نصب
+          </a>
+
+          <a
+            href="../#docs"
+            data-i18n="navDocs"
+          >
+            مستندات
+          </a>
+
+          <a
+            href="../#about"
+            data-i18n="navAbout"
+          >
+            درباره ما
+          </a>
+
+          <a
+            href="../#developers"
+            data-i18n="navDevelopers"
+          >
+            برای توسعه‌دهندگان
+          </a>
+
+        </div>
+
+
+        <div class="nav-tools">
+
+          <label class="language-control glass-control">
+
+            <span aria-hidden="true">🌐</span>
+
+            <select
+              id="languageSelect"
+              aria-label="انتخاب زبان"
+            >
+              <option value="fa">فارسی</option>
+              <option value="en">English</option>
+              <option value="ar">العربية</option>
+              <option value="fr">Français</option>
+            </select>
+
+          </label>
+
+
+          <button
+            class="theme-toggle glass-control"
+            id="themeToggle"
+            type="button"
+            aria-label="تغییر تم"
+          >
+            <span
+              id="themeIcon"
+              aria-hidden="true"
+            >
+              🌙
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- Hero -->
+
+    <section class="install-hero">
+
+      <div class="hero-content">
+
+        <div class="badge glass">
+
+          <span class="badge-dot"></span>
+
+          <span data-i18n="badge">
+            دریافت آچار ریاضی
+          </span>
+
+        </div>
+
+
+        <div class="install-icon">
+
+          <div class="icon-glow"></div>
+
+          <div class="download-symbol">
+            ↓
+          </div>
+
+        </div>
+
+
+        <h1 data-i18n="title">
+          آچار ریاضی را <span>دریافت کن!</span>
+        </h1>
+
+
+        <p
+          class="hero-text"
+          data-i18n="description"
+        >
+          نسخه مناسب دستگاهت را انتخاب کن و آچار ریاضی را همراه خودت داشته باش.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Downloads -->
+
+    <section class="downloads-section">
+
+      <div class="section-heading">
+
+        <span
+          class="section-kicker"
+          data-i18n="downloadKicker"
+        >
+          دانلود
+        </span>
+
+        <h2 data-i18n="downloadTitle">
+          نسخه مناسب دستگاهت را انتخاب کن
+        </h2>
+
+        <p data-i18n="downloadText">
+          آچار ریاضی برای اجرا روی دستگاه‌های مختلف آماده می‌شود.
+        </p>
+
+      </div>
+
+
+      <div class="download-grid">
+
+
+        <!-- Windows -->
+
+        <article class="download-card glass featured">
+
+          <div class="recommended">
+            <span data-i18n="recommended">
+              پیشنهادی
+            </span>
+          </div>
+
+
+          <div class="platform-icon windows">
+            ⊞
+          </div>
+
+
+          <h3>
+            Windows
+          </h3>
+
+
+          <p data-i18n="windowsText">
+            نسخه دسکتاپ آچار ریاضی برای ویندوز.
+          </p>
+
+
+          <div class="version">
+            <span data-i18n="version">
+              نسخه
+            </span>
+
+            <strong>1.0.0</strong>
+          </div>
+
+          <a
+            class="download-button primary"
+            href=""
+            download
+          >
+
+            <span>↓</span>
+
+            <span data-i18n="downloadWindows">
+              دانلود برای ویندوز
+            </span>
+
+          </a>
+
+
+          <small
+            class="file-note"
+            data-i18n="windowsNote"
+          >
+            فایل اجرایی ویندوز
+          </small>
+
+        </article>
+
+
+        <!-- Web -->
+
+        <article class="download-card glass">
+
+          <div class="platform-icon web">
+            ◈
+          </div>
+
+
+          <h3 data-i18n="webTitle">
+            نسخه وب
+          </h3>
+
+
+          <p data-i18n="webText">
+            بدون نصب، آچار ریاضی را مستقیماً در مرورگر اجرا کن.
+          </p>
+
+
+          <div class="version">
+            <span data-i18n="available">
+              وضعیت
+            </span>
+
+            <strong data-i18n="availableNow">
+              آنلاین
+            </strong>
+          </div>
+
+
+          <a
+            class="download-button secondary"
+            href="../"
+            data-i18n="openWeb"
+          >
+            ورود به نسخه وب
+          </a>
+
+
+          <small
+            class="file-note"
+            data-i18n="webNote"
+          >
+            مناسب برای رایانه و تلفن همراه
+          </small>
+
+        </article>
+
+
+        <!-- Other platforms -->
+
+        <article class="download-card glass coming-card">
+
+          <div class="platform-icon other">
+            ✦
+          </div>
+
+
+          <h3 data-i18n="otherTitle">
+            نسخه‌های دیگر
+          </h3>
+
+
+          <p data-i18n="otherText">
+            نسخه‌های مخصوص سیستم‌عامل‌های دیگر در آینده منتشر خواهند شد.
+          </p>
+
+
+          <div class="coming-label">
+            <span data-i18n="coming">
+              به‌زودی
+            </span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Installation Guide -->
+
+    <section class="guide-section">
+
+      <div class="section-heading">
+
+        <span
+          class="section-kicker"
+          data-i18n="guideKicker"
+        >
+          راهنمای نصب
+        </span>
+
+        <h2 data-i18n="guideTitle">
+          نصب آچار ریاضی ساده است
+        </h2>
+
+        <p data-i18n="guideText">
+          بعد از دریافت فایل، مراحل زیر را انجام بده.
+        </p>
+
+      </div>
+
+
+      <div class="steps">
+
+
+        <article class="step glass">
+
+          <div class="step-number">
+            01
+          </div>
+
+          <div class="step-content">
+
+            <h3 data-i18n="step1Title">
+              فایل را دانلود کن
+            </h3>
+
+            <p data-i18n="step1Text">
+              روی دکمه دانلود نسخه ویندوز بزن و منتظر بمان تا دریافت فایل کامل شود.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="step glass">
+
+          <div class="step-number">
+            02
+          </div>
+
+          <div class="step-content">
+
+            <h3 data-i18n="step2Title">
+              فایل نصب را اجرا کن
+            </h3>
+
+            <p data-i18n="step2Text">
+              فایل دریافت‌شده را باز کن و مراحل نصب را دنبال کن.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="step glass">
+
+          <div class="step-number">
+            03
+          </div>
+
+          <div class="step-content">
+
+            <h3 data-i18n="step3Title">
+              آچار ریاضی را اجرا کن
+            </h3>
+
+            <p data-i18n="step3Text">
+              پس از نصب، برنامه را باز کن و یادگیری ریاضی را شروع کن!
+            </p>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- Requirements -->
+
+    <section class="requirements-section">
+
+      <div class="info-card glass">
+
+        <span
+          class="section-kicker"
+          data-i18n="requirementsKicker"
+        >
+          اطلاعات
+        </span>
+
+        <h2 data-i18n="requirementsTitle">
+          قبل از نصب
+        </h2>
+
+        <div class="requirements-list">
+
+          <div class="requirement">
+            <span>✓</span>
+            <p data-i18n="requirement1">
+              سیستم‌عامل سازگار داشته باش.
+            </p>
+          </div>
+
+          <div class="requirement">
+            <span>✓</span>
+            <p data-i18n="requirement2">
+              فضای کافی برای نصب برنامه فراهم کن.
+            </p>
+          </div>
+
+          <div class="requirement">
+            <span>✓</span>
+            <p data-i18n="requirement3">
+              برای دریافت فایل به اتصال اینترنت نیاز داری.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Back -->
+
+    <section class="back-section">
+
+      <a
+        href="../"
+        class="back-button"
+        data-i18n="backHome"
+      >
+        ← بازگشت به صفحه اصلی
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-inner">
+
+      <span class="footer-brand">
+        🔧
+        <span data-i18n="brand">
+          آچار ریاضی
+        </span>
+      </span>
+
+      <span data-i18n="footerText">
+        ریاضی، با یک نگاه متفاوت.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
 </html>
